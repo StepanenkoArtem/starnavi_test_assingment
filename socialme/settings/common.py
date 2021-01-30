@@ -120,6 +120,4 @@ ROLLBAR = {
     'environment': 'development' if DEBUG else 'production',
     'root': BASE_DIR,
 }
-
 rollbar.init(**ROLLBAR)
-rollbar.report_message('Run development server')
