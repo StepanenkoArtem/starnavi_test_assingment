@@ -1,0 +1,27 @@
+{# Load the tag library #}
+{% load bootstrap4 %}
+
+{# Load CSS and JavaScript #}
+{% bootstrap_css %}
+{% bootstrap_javascript jquery='full' %}
+
+{# Display django.contrib.messages as Bootstrap alerts #}
+{% bootstrap_messages %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ff30078624.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    {% include 'header.html' %}
+    <main class="container">
+        <div class="row">
+            {% include 'userbar.html' %}
+            {% block feed %}{% endblock %}
+        </div>
+    </main>
+</body>
+</html>
