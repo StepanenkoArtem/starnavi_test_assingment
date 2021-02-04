@@ -12,5 +12,3 @@ DATABASES = {
 }
 
 ROLLBAR['branch'] = 'develop'
-
-rollbar.report_message('Run devserver', 'info')
